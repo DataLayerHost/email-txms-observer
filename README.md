@@ -18,7 +18,15 @@ E-mail: `stream@datalayer.host`
   - Each line is new message
   - Don't use extra text or signature
   - Raw text is used, no html
-  
+
+## Code
+
+Currently Blockbook streamer is supported.
+
+You should set URL of streamer for `mainnet` and `testnet` directly in the code.
+
+You can enable debug information with set `debug` to true.
+
 ## Epigram
 
 > 「Cryptoni Confidimus」
