@@ -21,11 +21,16 @@ E-mail: `stream@datalayer.host`
 
 ## Code
 
-Currently Blockbook streamer is supported.
+Currently [Blockbook](https://github.com/cryptohub-digital/blockbook) streamer is supported.
 
 You should set URL of streamer for `mainnet` and `testnet` directly in the code.
 
 You can enable debug information with set `debug` to true.
+
+## Providers
+
+Tested providers:
+- [pipedream.com](https://pipedream.com)
 
 ## Epigram
 
