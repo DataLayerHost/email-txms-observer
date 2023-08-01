@@ -1,41 +1,36 @@
-# E-mail TXMS Observer
+# TxMS E-mail Observer
 
-Receive TXMS as emails.
+Use our e-mail listener service to send Core Blockchain transactions.
 
-E-mail: `stream@datalayer.host`
+E-mail address: `stream@datalayer.host`
 
-## Composing message
+## Message Composition
 
-- Subject is the network name.
-  - `mainnet` Core Mainnet
-  - `main` Core Mainnet
-  - `1` Core Mainnet
-  - `testnet` Core Devin
-  - `test` Core Devin
-  - `devin` Core Devin
-  - `3` Core Devin
-- Body is the TXMS transaction.
-  - Each line is new message
-  - Don't use extra text or signature
-  - Raw text is used, no html
+- The subject line should reflect the network name. Here are your options:
+  - For Core Mainnet: `mainnet`, `main`, or `1`
+  - For Core Devin: `testnet`, `test`, `devin`, or `3`
+- The body of the email should contain the TxMS transaction.
+  - Each new transaction should start on a new line
+  - Refrain from including extra text or signatures
+  - Only raw text is acceptable, not HTML
 
-## Code
+## Technical Details
 
-Currently [Blockbook](https://github.com/cryptohub-digital/blockbook) streamer is supported.
+At present, the [Blockbook](https://github.com/trezor/blockbook) streamer is supported.
 
-You should set URL of streamer for `mainnet` and `testnet` directly in the code.
+You need to specify the streamer URLs for `mainnet` and `testnet` directly in the code.
 
-You can enable debug information with set `debug` to true.
+By setting `debug` to true, you can enable debug information.
 
-## Providers
+## Service Providers
 
-Tested providers:
+Tested service providers include:
 - [pipedream.com](https://pipedream.com)
 
-## Epigram
+## Motto
 
 > 「Cryptoni Confidimus」
 
 ## License
 
-Licensed under the [CORE](LICENSE) License.
+This service is licensed under the [CORE](LICENSE) License.
